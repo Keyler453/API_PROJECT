@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Colombian;
 use App\Models\Loan;
 use App\Models\Company;
 use App\Models\Customer;
@@ -39,5 +40,8 @@ Route::get('/customers', function(){
 
 Route::get('/loans', function(){
     return Loan::get(); 
+});
 
+Route::get('/colombians', function(){
+    return Colombian::get(); 
 });
